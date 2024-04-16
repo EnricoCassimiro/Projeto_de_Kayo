@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-menu="classicmenu">
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!-- icone do site -->
+    <link rel="shortcut icon" href="upload/logo.png"/>
+<!-- nome que aparece na guia do site -->
+    <title>Restaurante G&G</title>
+<!-- links para o css -->
+    <link rel='stylesheet' href='css/settings.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/reset.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/wordpress.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/animation.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/magnific-popup.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/ui-custom.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/mediaelementplayer-legacy.min.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/flexslider.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/tooltipster.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/odometer-theme-minimal.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/hw-parallax.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/screen.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/kirki-styles.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/grid.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/datepicker.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all'/>
+
+
+<!-- Fontes para letras -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C700%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic' type='text/css' media='all'/>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato%3A100%2C200%2C300%2C400%2C600%2C700%2C800%2C900%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic' type='text/css' media='all'/>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Kristi%3A100%2C200%2C300%2C400%2C600%2C700%2C800%2C900%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic' type='text/css' media='all'/>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato%7CKristi&#038;subset' type='text/css' media='all'/>
+    <link href="http://fonts.googleapis.com/css?family=Kristi:400%7CLato:300%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+
+<!-- Inclui a biblioteca Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+
+<body class="home page-template-default page page-id-3210">
+
+    <input type="hidden" id="pp_menu_layout" name="pp_menu_layout" value="classicmenu" />
+    <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="" />
+    <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="" />
+    <input type="hidden" id="pp_image_path" name="pp_image_path" value="http://themes.themegoods.com/grandrestaurant/demo2/wp-content/themes/grandrestaurant/images/" />
+    <input type="hidden" id="pp_homepage_url" name="pp_homepage_url" value="http://themes.themegoods.com/grandrestaurant/demo2" />
+    <input type="hidden" id="pp_ajax_search" name="pp_ajax_search" value="1" />
+    <input type="hidden" id="pp_fixed_menu" name="pp_fixed_menu" value="1" />
+    <input type="hidden" id="pp_topbar" name="pp_topbar" value="1" />
+    <input type="hidden" id="post_client_column" name="post_client_column" value="4" />
+    <input type="hidden" id="pp_back" name="pp_back" value="Back" />
+    <input type="hidden" id="pp_page_title_img_blur" name="pp_page_title_img_blur" value="1" />
+    <input type="hidden" id="tg_project_filterable_link" name="tg_project_filterable_link" value="" />
+    <input type="hidden" id="pp_reservation_start_time" name="pp_reservation_start_time" value="11:00" />
+    <input type="hidden" id="pp_reservation_end_time" name="pp_reservation_end_time" value="21:00" />
+    <input type="hidden" id="pp_reservation_time_step" name="pp_reservation_time_step" value="30" />
+
+    <input type="hidden" id="pp_footer_style" name="pp_footer_style" value="4" />
+
+    <!-- Barra de navegação do lado direito com a barra de pesquisa -->
+    <div class="mobile_menu_wrapper">
+        <a id="close_mobile_menu" href="javascript:;"><i class="fa fa-close"></i></a>
+
+        <form role="search" method="get" name="searchform" id="searchform" action="">
+            <div>
+                <input type="text" value="" name="s" id="s" autocomplete="off" placeholder="Pesquisar..." />
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div id="autocomplete"></div>
+        </form>
+
+        <div class="menu-side-menu-container">
+            <ul id="mobile_main_menu" class="mobile_main_nav">
+                <li class="menu-item"><a href="#welcome">Bem-vindo</a></li>
+                <li class="menu-item"><a href="#about">Sobre nós</a></li>
+                <li class="menu-item"><a href="#menu">Cardápio</a></li>
+                <li class="menu-item"><a href="#gallery">Galeria</a></li>
+                <li class="menu-item"><a href="#news">Novidades</a></li>
+                <li class="menu-item"><a href="#findus">Onde estamos?</a></li>
+            </ul>
+        </div>
+        <!-- Botão para o cliente reserva sua mesa -->
+        <a href="javascript:;" id="tg_sidemenu_reservation" class="button ">Reserve aqui!</a>
+        </div>
+    </div>
+
+    <!-- Barra do topo -->
+    <div id="wrapper" class="hasbg">
+
+        <div class="header_style_wrapper">
+
+            <div class="above_top_bar">
+                <div class="page_content_wrapper">
+
+                    <div class="social_wrapper">
+                        <ul>
+                            <li class="facebook"><a target="_blank" title="Facebook" href="https://facebook.com/#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="whatsapp"><a target="_blank" title="Whatsapp" href="https://api.whatsapp.com/send/?phone=%2B5581994066582&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a></li>
+                            <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/enricocassimiro"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="extend_top_contact_info top_contact_info">
+                        <span id="top_contact_address">Endereço: Caruaru Shopping 800 - Caruaru/PE</span>
+                        <span id="top_contact_number"><a href="tel:+55(81)99406-6582"><i class="fa fa-phone"></i>Telefone: +55(81)99406-6582</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top_bar  hasbg">
+
+                <div id="menu_wrapper">
+
+                    <!-- Logo do site  -->
+                    <div id="logo_normal" class="logo_container">
+                        <div class="logo_align">
+                            <a id="custom_logo" class="logo_wrapper hidden" href="">
+                                <img src="upload/logotipo.png" alt="Restaurante G&G" width="101" height="34" style="width:101px;height:34px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div id="logo_transparent" class="logo_container">
+                        <div class="logo_align">
+                            <a id="custom_logo_transparent" class="logo_wrapper default" href="">
+                                <img src="upload/logotipotransp.png" alt="Restaurante G&G" width="101" height="34" style="width:101px;height:34px;" />
+                            </a>
+                        </div>
+                    </div>
+
+                   <!-- Botão para efetuar a reserva -->
+                    <div class="menu_buttons_container">
+                        <div class="menu_buttons_content">
+                            <!-- Reserva -->
+                            <a href="javascript:;" id="tg_reservation" class="button ">Reserve aqui!</a>
+
+                            <a href="javascript:;" id="mobile_nav_icon"></a>
+
+                        </div>
+                    </div>
+                    <!-- Menu de Navegação -->
+                    <div id="nav_wrapper">
+                        <div class="nav_wrapper_inner">
+                            <div id="menu_border_wrapper">
+                                <div class="menu-main-menu-container">
+                                    <ul id="main_menu" class="nav">
+                                        <li class="menu-item"><a href="#welcome">Bem-vindo</a></li>
+                                        <li class="menu-item"><a href="#about">Sobre nós</a></li>
+                                        <li class="menu-item"><a href="#menu">Cardápio</a></li>
+                                        <li class="menu-item"><a href="#gallery">Galeria</a></li>
+                                        <li class="menu-item"><a href="#news">Novidades</a></li>
+                                        <li class="menu-item"><a href="#findus">Onde estamos?</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <!-- Tela que vem depois de aperta botão de reserva aqui -->
+        <div id="reservation_wrapper">
+            <div class="reservation_content">
+                <div class="reservation_form">
+                    <div class="reservation_form_wrapper">
+                        <a id="reservation_cancel_btn" href="javascript:;"><i class="fa fa-close"></i></a>
+
+                        <h2 class="ppb_title"><span class="ppb_title_first" >Reserva</span>de mesa</h2>
+                        <div id="reponse_msg">
+                            <ul></ul>
+                        </div>
+
+                        <form id="tg_reservation_form" method="post">
+                            <input type="hidden" id="action" name="action" value="tg_reservation_mailer" />
+
+                            <div class="one_third">
+                                <label for="your_name">Nome*</label>
+                                <input id="your_name" name="your_name" type="text" class="required_field" />
+                            </div>
+
+                            <div class="one_third">
+                                <label for="email">Email*</label>
+                                <input id="email" name="email" type="text" class="required_field" />
+                            </div>
+
+                            <div class="one_third last">
+                                <label for="phone">Telefone*</label>
+                                <input id="phone" name="phone" type="text" class="required_field" />
+                            </div>
+
+                            <br class="clear" />
+                            <br/>
+
+                            <div class="one_third">
+                                <label for="date" class="hidden">Data*</label>
+                                <input type="text" class="pp_date required_field" id="date" name="date" value="10/07/2019">
+                            </div>
+
+                            <div class="one_third">
+                                <label for="time">Horario*</label>
+                                <input type="text" class="pp_time required_field" id="time" name="time" value="18:00" />
+                            </div>
+
+                            <div class="one_third last">
+                                <label for="seats">Assentos*</label>
+                                <select id="seats" name="seats" class="required_field" style="width:99%">
+                                    <option value="1">1 Pessoa</option>
+                                    <option value="2">2 Pessoas</option>
+                                    <option value="3">3 Pessoas</option>
+                                    <option value="4">4 Pessoas</option>
+                                    <option value="5">5 Pessoas</option>
+                                    <option value="6">6 Pessoas</option>
+                                    <option value="7">7 Pessoas</option>
+                                    <option value="8">8 Pessoas</option>
+                                    <option value="9">9 Pessoas</option>
+                                    <option value="10">10 Pessoas</option>
+                                    <option value="11">11 Pessoas</option>
+                                    <option value="12">12 Pessoas</option>
+                                    <option value="13">13 Pessoas</option>
+                                    <option value="14">14 Pessoas</option>
+                                    <option value="15">15 Pessoas</option>
+                                    <option value="16">16 Pessoas</option>
+                                    <option value="17">17 Pessoas</option>
+                                    <option value="18">18 Pessoas</option>
+                                    <option value="19">19 Pessoas</option>
+                                    <option value="20">20+ Pessoas</option>
+                                </select>
+                            </div>
+
+                            <br class="clear" />
+                            <br/>
+
+                            <div class="one">
+                                <label for="message">Pedidos especiais para fazer?</label>
+                                <textarea id="message" name="message" rows="7" cols="10"></textarea>
+                            </div>
+
+                            <br class="clear" />
+                            <br/>
+
+                            <div class="one">
+                                <p>
+                                    <input id="reservation_submit_btn" type="submit" value="Finalize sua reserva" />
+                                </p>
+                            </div>
+
+                            <br class="clear" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax_overlay_header"></div>
+        </div>
+
+        <div class="ppb_wrapper  ">
+            <div id="welcome" class="one fullwidth ">
+                <link href="http://fonts.googleapis.com/css?family=Kristi:400%7CLato:300%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+                <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background:#262626;padding:0px;">
+                    <!-- START DESLIZANTE -->
+                    <div id="rev_slider_2_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.5.1">
+                        <ul>
+                            <!-- Deslize  -->
+                            <li data-index="rs-2" data-transition="zoomin" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/dumpling_new-1024x764-100x50.jpg" data-rotate="0" data-saveperformance="on" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                <!-- Imagem principal -->
+                                <img src="upload/background.png" alt="" title="dumpling_new-1024&#215;764" width="1024" height="764" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                <!-- Camadas -->
+
+                                <!-- Camada. 1 -->
+                                <div class="tp-caption title-first-word   tp-resizeme" id="slide-2-layer-1" data-x="90" data-y="center" data-voffset="20" data-width="auto" data-height="auto" data-type="text" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"","delay":450,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"auto:auto;","ease":"nothing"}]' data-textAlign="['','','','']" style="z-index: 5; white-space: nowrap;text-transform:left;text-shadow: 2px 2px 2px #CECECE;">Bem-vindo ao </div>
+
+                                <!-- Camada. 2 -->
+                                <div class="tp-caption title   tp-resizeme" id="slide-2-layer-2" data-x="90" data-y="center" data-voffset="80" data-width="auto" data-height="auto" data-type="text" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"auto:auto;","ease":"nothing"}]' data-textAlign="['','','','']" style="z-index: 6; white-space: nowrap; color: #000;text-transform:left;text-shadow: 2px 2px 2px #CECECE;">Restaurante<strong>G&G</strong> </div>
+
+                                <!-- Camada. 3 -->
+                                <div class="tp-caption sub-title   tp-resizeme" id="slide-2-layer-3" data-x="90" data-y="center" data-voffset="150" data-width="auto" data-height="auto" data-type="text" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"auto:auto;","ease":"nothing"}]' data-textAlign="['','','','']" style="z-index: 7; white-space: nowrap; color: #000;text-transform:left;text-shadow: 2px 2px 2px #CECECE;">Fazendo deliciosas comidas desde 2022
+                                    <br/>  </div>
+                            </li>
+                        </ul>
+                        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                    </div>
+
+                </div>
+            <!-- informações do restaurante e história dos criadores -->
+            </div>
+            <div id="about" class="one withsmallpadding ppb_text" style="text-align:center;padding-bottom:0 !important;padding:50px 0 50px 0;">
+                <div class="standard_wrapper">
+                    <div class="page_content_wrapper">
+                        <div class="inner">
+                            <div style="margin:auto;width:60%">
+                                </p>
+                                <div style="font-size:30px;text-transform:uppercase;letter-spacing:-1px;font-weight:300;">Fazendo um dos melhores cardápios da cidade! Venha conhecer nosso restaurante </div>
+                                <div class="post_detail">Nossos fundadores Genário & Getúlio</div>
+                                <p><span style="font-family:Kristi;font-size:40px;font-weight:600;">Genário & Getúlio</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="one ppb_card_two_cols_with_image" style="padding: 50px 0 70px 0 !important;position:relative;padding:40px 0 40px 0;">
+                <div class="standard_wrapper">
+                    <div class="page_content_wrapper">
+                        <div class="inner">
+                            <div class="one_half parallax_scroll_image" style="width:65%;">
+                                <div class="image_classic_frame expand">
+                                    <div class="image_wrapper">
+                                        <a href="upload/Orleans-Somerville-2.jpeg" class="img_frame"><img src="upload/Orleans-Somerville-2.jpeg" class="portfolio_img" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one_half last parallax_scroll" style="width:40%;position:absolute;right:90px;padding:40px;background:#ffffff;" data-stellar-ratio="1.3">
+                                <h2 class="ppb_title"><span class="ppb_title_first" >Descubra</span>Nossa história</h2>
+                                <div class="ppb_subtitle">De como começamos esse retaurante!</div>
+                                <div class="page_header_sep left"></div>A história do Restaurante G&G é uma celebração da paixão pela comida, da perseverança nos negócios e, acima de tudo, do vínculo inquebrável entre dois irmãos que transformaram seu sonho em realidade, enchendo o mundo com o delicioso sabor da cozinha G&G.</div>
+                            <br class="clear" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="one" style="padding: 70px 0 50px 0 !important;position:relative;padding:40px 0 40px 0;color:#ffffff;">
+                <div class="one">
+                    <div class="image_classic_frame expand">
+                        <div class="fullwidth_image" style="height:600px;background-image:url('upload/100_1040312_mercer_knives_0391_fweb.jpg');"></div>
+                    </div>
+                </div>
+                <div class="one_half last parallax_scroll" style="width:40%;position:absolute;left:90px;background:#222;padding:40px;" data-stellar-ratio="1.3" data-stellar-vertical-offset="600">
+                    <h2 class="ppb_title" style="color:#ffffff;"><span class="ppb_title_first" style="color:#ffffff;">Quem são Genário e Getúlio</span></h2>
+                    <div class="ppb_subtitle" style="color:#ffffff;"></div>
+                    <div class="page_header_sep left" style="border-color:#ffffff"></div>Há um ano atrás, na cidade de Caruaru-PE, dois irmãos visionários, Genário e Getúlio, decidiram seguir sua paixão pela culinária e abrir um restaurante juntos. Inspirados em suas iniciais, deram ao estabelecimento o nome de "Restaurante G&G", onde a excelência gastronômica seria a marca registrada</div>
+                <br class="clear" />
+            </div>
+            <!-- cardápio de pratos de entradas -->
+            <div id="menu" class="one" style="padding-top: 0 !important;padding:30px 0 30px 0;">
+                <div class="standard_wrapper">
+                    <div class="page_content_wrapper">
+                        <div class="inner">
+                            <div style="margin:auto;width:60%;text-align:center;">
+                                <h2 class="ppb_menu_title">Pratos de Entradas</h2>
+                                <br class="clear" />
+                                <br/>
+                                <div class="one ">
+                                    <div id="menu_3194" class="menu_content_classic">
+                                        <div class="menu_image">
+                                            <a href="upload/238E6F3800000578-2851992-image-3_1417106023786.jpg" class="img_frame"><img src="upload/238E6F3800000578-2851992-image-3_1417106023786-150x150.jpg" alt="" /></a>
+                                        </div>
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">FRANGO ASSADO COM ARROZ</span>
+                                            <span class="menu_dots image"></span><span class="menu_price">R$20</span></h5>
+                                        <div class="post_detail menu_excerpt">Frango / Azeite / Sal / Arroz</div>
+                                    </div>
+                                </div>
+                                <div class="one ">
+                                    <div id="menu_3195" class="menu_content_classic">
+                                        <div class="menu_image">
+                                            <a href="upload/Kimchi-Ramen-35-1024x682.jpg" class="img_frame"><img src="upload/Kimchi-Ramen-35-1024x682-150x150.jpg" alt="" /></a>
+                                        </div>
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">CARANGUEJO COM FONTES DE CURRY</span>
+                                            <span class="menu_dots image"></span><span class="menu_price">R$24.5</span></h5>
+                                        <div class="post_detail menu_excerpt">Caranguejo / Batatas / Arroz </div>
+                                    </div>
+                                </div>
+                                <div class="one ">
+                                    <div id="menu_3196" class="menu_content_classic">
+                                        <div class="menu_image">
+                                            <a href="upload/Shakshouka-Tanya-Zouev.jpg" class="img_frame"><img src="upload/Shakshouka-Tanya-Zouev-150x150.jpg" alt="" /></a>
+                                        </div>
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">BIFE DE SALMÃO IMPORTADO</span>
+                                            <span class="menu_dots image"></span><span class="menu_price">R$18.9</span></h5>
+                                        <div class="post_detail menu_excerpt">Salmão / Vegetais / Óleo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br class="clear" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- pratos principais -->
+            <div class="one" style="padding-top: 0 !important;padding:50px 0 50px 0;">
+                <div class="standard_wrapper">
+                    <div class="page_content_wrapper">
+                        <div class="inner">
+                            <div style="margin:auto;width:100%;text-align:center;">
+                                <h2 class="ppb_menu_title">Pratos Principais</h2>
+                                <br class="clear" />
+                                <br/>
+                                <div class="one_half ">
+                                    <div id="menu_3197" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">PIZZA DE BATATA ASSADA</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$12</span></h5>
+                                        <div class="post_detail menu_excerpt">Batata / Pão / Queijo</div>
+                                        <div class="menu_highlight"><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="one_half last">
+                                    <div id="menu_3172" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">LOMBO DE PORCO MARINADO NO IOGURTE</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$20</span></h5>
+                                        <div class="post_detail menu_excerpt">Porco / Lombo / Iogurte</div>
+                                    </div>
+                                </div>
+                                <div class="one_half ">
+                                    <div id="menu_3173" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">CARNE DE PORCO GRELHADA COM LIMÃO EM CONSERVA</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$22</span></h5>
+                                        <div class="post_detail menu_excerpt">Porco / Limões / Cebolas</div>
+                                        <div class="menu_highlight"><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="one_half last">
+                                    <div id="menu_3174" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">FRANGO COM LIMÃO E ALECRIM</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$19.9</span></h5>
+                                        <div class="post_detail menu_excerpt">Frango / Alecrim / Limão</div>
+                                    </div>
+                                </div>
+                                <div class="one_half ">
+                                    <div id="menu_3175" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">FRANGO DEFUMADO COM MAÇÃ E MOLHO BRANCO</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$18.9</span></h5>
+                                        <div class="post_detail menu_excerpt">Frango / Maçã / Tomates</div>
+                                        <div class="menu_highlight"><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="one_half last">
+                                    <div id="menu_3176" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">PEITO DE FRANGO REFOGADO COM VINHO BRANCO E CHALOTAS</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$24.5</span></h5>
+                                        <div class="post_detail menu_excerpt">Peito de Frango / Vinho</div>
+                                    </div>
+                                </div>
+                                <div class="one_half ">
+                                    <div id="menu_3177" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">BIFE GRELHADO COM HARISSA E CEBOLA ROXA EM CONSERVA</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$29.9</span></h5>
+                                        <div class="post_detail menu_excerpt">Carne / Cebolas / Tomates</div>
+                                    </div>
+                                </div>
+                                <div class="one_half last">
+                                    <div id="menu_3178" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">BOLO DE CARNE COM CHURRASCO DE PIMENTA PRETA E MEL</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$19.9</span></h5>
+                                        <div class="post_detail menu_excerpt">Pimenta / Frango / Mel</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br class="clear" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cardapio de sobremesas -->
+            <div class="one" style="padding-top: 0 !important;padding:50px 0 50px 0;">
+                <div class="standard_wrapper">
+                    <div class="page_content_wrapper">
+                        <div class="inner">
+                            <div style="margin:auto;width:100%;text-align:center;">
+                                <h2 class="ppb_menu_title">Pratos de Sobremesas</h2>
+                                <br class="clear" />
+                                <br/>
+                                <div class="one_third ">
+                                    <div id="menu_3197" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">PUDIM DE DOCE DE LEITE</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$12</span></h5>
+                                        <div class="post_detail menu_excerpt">Pudim / Caramelo / Doce de leite</div>
+                                        <div class="menu_highlight"><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="one_third ">
+                                    <div id="menu_3182" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">BATATAS VERMELHAS COM ALECRIM E MEL</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$15.5</span></h5>
+                                        <div class="post_detail menu_excerpt">Batatas / Alecrim / Mel</div>
+                                        <div class="menu_highlight"><i class="fa fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="one_third last">
+                                    <div id="menu_3181" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">SORVETE DE PITAYA</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$12</span></h5>
+                                        <div class="post_detail menu_excerpt">Creme / Pitaya</div>
+                                    </div>
+                                </div>
+                                <div class="one_third ">
+                                    <div id="menu_3180" class="menu_content_classic">
+                                        <h5 class="menu_post">
+                                            <span class="menu_title">COGUMELOS COM MEL</span>
+                                            <span class="menu_dots"></span><span class="menu_price">R$14.5</span></h5>
+                                        <div class="post_detail menu_excerpt">Cogumelos / Mel </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br class="clear" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- galeria de imagens de comidas e do restaurante -->
+            <div id="gallery" class="parallax title" data-image="upload/Kimchi-Ramen-35-1024x682.jpg" data-width="1024" data-height="682" data-content-height="60">
+                <div class="parallax_title">
+                    <h2 class="ppb_title"><span class="ppb_title_first" >Galeria</span>de imagens</h2></div>
+            </div>
+            <div class="one">
+                <div id="1570440867885013024" class="photo_wall_wrapper shortcode ">
+                    <div class="wall_entry ">
+                        <div class="wall_thumbnail">
+                            <a class="fancy-gallery" href="upload/238E6F3800000578-2851992-image-3_1417106023786.jpg" title=""><img src="upload/238E6F3800000578-2851992-image-3_1417106023786-400x400.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="wall_entry ">
+                        <div class="wall_thumbnail">
+                            <a class="fancy-gallery" href="upload/untitled-8538.jpg" title=""><img src="upload/untitled-8538-400x400.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="wall_entry ">
+                        <div class="wall_thumbnail">
+                            <a class="fancy-gallery" href="upload/Orleans-Somerville-2.jpeg" title=""><img src="upload/Orleans-Somerville-2-400x400.jpeg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="wall_entry ">
+                        <div class="wall_thumbnail">
+                            <a class="fancy-gallery" href="upload/dumpling_new-1024x764.jpg" title=""><img src="upload/dumpling_new-1024x764-400x400.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="wall_entry ">
+                        <div class="wall_thumbnail">
+                            <a class="fancy-gallery" href="upload/vickerys-bar-atlanta.jpg" title=""><img src="upload/vickerys-bar-atlanta-400x400.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="wall_entry ">
+                        <div class="wall_thumbnail">
+                            <a class="fancy-gallery" href="upload/100_1040312_mercer_knives_0391_fweb.jpg" title=""><img src="upload/100_1040312_mercer_knives_0391_fweb-400x400.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="wall_entry ">
+                        <div class="wall_thumbnail">
+                            <a class="fancy-gallery" href="upload/223_1r140806_eat_spots_sobanndls.jpg" title=""><img src="upload/223_1r140806_eat_spots_sobanndls-400x400.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="wall_entry ">
+                        <div class="wall_thumbnail">
+                            <a class="fancy-gallery" href="upload/Shakshouka-Tanya-Zouev.jpg" title=""><img src="upload/Shakshouka-Tanya-Zouev-400x400.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- painel de novidades -->
+            <div id="news" class="one withsmallpadding ppb_header " style="padding-bottom: 0 !important;text-align:center;padding:50px 0 50px 0;">
+                <div class="standard_wrapper">
+                    <div class="page_content_wrapper">
+                        <div class="inner">
+                            <div style="margin:auto;width:100%">
+                                <h2 class="ppb_title" ><span class="ppb_title_first" >Novidades</span></h2>
+                                <div class="page_header_sep center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="standard_wrapper">
+                <div class="one withsmallpadding" style="padding-top: 10px !important;padding:50px 0 50px 0;">
+                    <div class="page_content_wrapper">
+                        <div class="inner">
+                            <div class="inner_wrapper">
+                                <div class="blog_grid_wrapper sidebar_content full_width ppb_blog_posts">
+                                    <div id="post-490" class="post type-post hentry status-publish">
+                                        <div class="post_wrapper grid_layout">
+                                            <div class="blog_grid_content">
+                                                <div class="post_header grid">
+                                                    <h6><a href="#" title="Black Spaghetti with Rock Shrimp">Comidas novas no cardápio toda semana!</a></h6>
+                                                    <div class="post_detail">
+                                                        20 de Abril, 2022&nbsp;Em&nbsp;<a href="#">Caruaru</a>&nbsp;<span class="post_readmore">
+                                                            <a class="readmore" href="#">Saiba mais</a>
+                                                        </span></div>
+                                                </div>
+                                                <div class="post_img small">
+                                                    <a href="#">
+                                                        <img src="upload/Kimchi-Ramen-35-1024x682-705x529.jpg" alt="" class="" />
+                                                    </a>
+                                                </div>
+                                                <p>Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla purus...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="post-489" class="post type-post hentry status-publish">
+                                        <div class="post_wrapper grid_layout">
+                                            <div class="blog_grid_content">
+                                                <div class="post_header grid">
+                                                    <h6><a href="#" title="Cooking Food With Love">Venha conhecer nossa cozinha por dentro! Faça sua reserva aqui</a></h6>
+                                                    <div class="post_detail">
+                                                        18 de Abril, 2022&nbsp;Em&nbsp;<a href="#">Caruaru</a>&nbsp;<span class="post_readmore">
+                                                            <a class="readmore" href="#">Saiba mais</a>
+                                                        </span></div>
+                                                </div>
+                                                <div class="post_img small">
+                                                    <a href="#">
+                                                        <img src="upload/Orleans-Somerville-2-705x529.jpeg" alt="" class="" />
+                                                    </a>
+                                                </div>
+                                                <p>Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla purus...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="post-1133" class="post type-post hentry status-publish">
+                                        <div class="post_wrapper grid_layout">
+                                            <div class="blog_grid_content">
+                                                <div class="post_header grid">
+                                                    <h6><a href="#" title="Modern Fusion Cuisine">Bla Bla Bla Bla Bla Bla Bla</a></h6>
+                                                    <div class="post_detail">
+                                                        17 de Abril, 2022&nbsp;Em&nbsp;<a href="#">Caruaru</a>&nbsp;<span class="post_readmore">
+                                                            <a class="readmore" href="#">Saiba mais</a>
+                                                        </span></div>
+                                                </div>
+                                                <div class="post_img small">
+                                                    <a href="#">
+                                                        <img src="upload/100_1040312_mercer_knives_0391_fweb-705x529.jpg" alt="" class="" />
+                                                    </a>
+                                                </div>
+                                                <p>Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur Nulla fringilla purus...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- painel de localização -->
+            <div id="findus" class="one" style="padding-top: 0px !important;position:relative;padding:40px 0 40px 0;color:#ffffff;">
+                <div class="standard_wrapper">
+                    <div>
+                        <div class="inner">
+            <!-- Elemento HTML onde o mapa será exibido -->
+  <div id="map" style="height: 400px;"></div>
+
+  <script>
+    // Crie um mapa usando Leaflet e defina as coordenadas e o nível de zoom
+    var mymap = L.map('map').setView([-8.294790709992183, -35.95212392082824], 15);
+
+    // Adicione uma camada de mapa da OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(mymap);
+
+    // Adicione um marcador ao mapa
+    var marker = L.marker([-8.294790709992183, -35.95212392082824]).addTo(mymap);
+
+    // Adicione um pop-up ao marcador
+    marker.bindPopup("<b>Minha Localização</b>").openPopup();
+  </script>                
+                                    <div class="map-infowindow">Caruaru, PE</div>
+                                </div>  
+            
+                            </div>                  
+                            <div class="one_half last parallax_scroll" style="width:40%;position:absolute;right:90px;background:#222;padding:40px;" data-stellar-ratio="1.3">
+                                <h2 class="ppb_title" style="color:#ffffff;"><span class="ppb_title_first" style="color:#ffffff;">Nossa</span>Localização</h2>
+                                <div class="page_header_sep left" style="border-color:#ffffff"></div><strong>RESTAURANTE G&G</strong>
+                                <br /> Caruaru Shopping 800, Caruaru-PE
+                                <br /> Na praça de alimentação do Caruaru Shopping</p>
+                                <p> -8.294790709992183, -35.95212392082824 </div>
+                            <br class="clear" />
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- tabela de mesas reservadas -->
+            <div class="one withsmallpadding ppb_text" style="padding-top: 10px !important;padding:30px 0 30px 0;">
+                <div class="standard_wrapper">
+                    <div class="page_content_wrapper">
+                        <div class="inner">
+                            <div style="margin:auto;width:100%;text-align:center;">
+                                <p>Saiba quais mesas já estão reservadas!
+                                    <br /> É só colocar o dia, a hora, e a quantidades de pessoas e recebera as informações</p>
+                                <p>
+                                    <form name="open_table_form" id="open_table_form" target="_blank" method="POST" action="#">
+                                        <input type="hidden" name="RestaurantID" value="100342">
+                                        <input type="hidden" name="txtDateFormat" value="dd/MM/yyyy">
+                                        <div class="open_table_field">
+                                            <label for="startDate" class="hidden"><i class="fa fa-calendar"></i></label>
+                                            <input type="text" class="pp_date required_field" id="startDate" name="startDate" value="10/07/2019" />
+                                        </div>
+                                        <div class="open_table_field">
+                                            <label for="ResTime" class="hidden"><i class="fa fa-clock-o"></i></label>
+                                            <input type="text" class="pp_time required_field" id="ResTime" name="ResTime" value="18:00" />
+                                        </div>
+                                        <div class="open_table_field">
+                                            <label for="PartySize" class="hidden"><i class="fa fa-user"></i></label>
+                                            <select id="PartySize" name="PartySize" class="required_field">
+                                                <option value="1">1 pessoa</option>
+                                                <option value="2">2 pessoas</option>
+                                                <option value="3">3 pessoas</option>
+                                                <option value="4">4 pessoas</option>
+                                                <option value="5">5 pessoas</option>
+                                                <option value="6">6 pessoas</option>
+                                                <option value="7">7 pessoas</option>
+                                                <option value="8">8 pessoas</option>
+                                                <option value="9">9 pessoas</option>
+                                                <option value="10">10 pessoas</option>
+                                                <option value="11">11 pessoas</option>
+                                                <option value="12">12 pessoas</option>
+                                                <option value="13">13 pessoas</option>
+                                                <option value="14">14 pessoas</option>
+                                                <option value="15">15 pessoas</option>
+                                                <option value="16">16 pessoas</option>
+                                                <option value="17">17 pessoas</option>
+                                                <option value="18">18 pessoas</option>
+                                                <option value="19">19 pessoas</option>
+                                                <option value="20">20+ pessoas</option>
+                                            </select>
+                                        </div>
+                                        <br class="clear" />
+                                        <input id="open_table_submit" type="submit" class="" value="Mesas disponiveis" />
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider one">&nbsp;</div>
+        </div>
+        <!-- roda-pé do site com todas informações -->
+        <div class="footer_bar ">
+
+            <div id="footer_before_widget_text"></div>
+
+            <div id="footer" class="">
+                <ul class="sidebar_widget four">
+                    <li id="text-9" class="widget widget_text">
+                        <div class="textwidget">
+                            <p><img src="upload/logotipo.png" alt="" width="101" height="34" /></p>
+                            <p>Aqui estão todas nossas redes sociais para contato e tirar mais dúvidas.</p>
+                            <div class="social_wrapper shortcode dark ">
+                                <ul>
+                                    <li class="facebook"><a target="_blank" title="Facebook" href="https://facebook.com/#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/enricocassimiro"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="whatsapp"><a target="_blank" title="Whatsapp" href="https://api.whatsapp.com/send/?phone=%2B5581994066582&text&type=phone_number&app_absent=0"><i class="fa fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <!-- painel de novidades -->
+                    </li>
+                    <li id="custom_recent_posts-3" class="widget Custom_Recent_Posts">
+                        <h2 class="widgettitle">Postagens Recentes</h2>
+                        <ul class="posts blog ">
+                            <li><a href="file:///C:/Users/enric/OneDrive/Documentos/Projeto%20de%20Kayo/index.html#news">Comidas novas no cardápio toda semana!</a>
+                                <div class="post_attribute">Abril 20, 2022</div>
+                            </li>
+                            <li><a href="file:///C:/Users/enric/OneDrive/Documentos/Projeto%20de%20Kayo/index.html#news">Venha conhecer nossa cozinha! Faça sua reserva aqui</a>
+                                <div class="post_attribute">Abril 18, 2022</div>
+                            </li>
+                            <li><a href="file:///C:/Users/enric/OneDrive/Documentos/Projeto%20de%20Kayo/index.html#news">Bla Bla Bla Bla Bla Bla Bla</a>
+                                <div class="post_attribute">Abril 17, 2022</div>
+                            </li>
+                        </ul>
+                    <!-- painel de galeria de fotos das alimentações -->
+                    </li>
+                    <li id="custom_flickr-9" class="widget Custom_Flickr">
+                        <h2 class="widgettitle">Galaria de imagens</h2>
+                        <ul class="flickr">
+                            <li>
+                                <a class="img_frame" target="_blank" href="httpsupload/65535/48544015562_9294520488_b.jpg" title="roasted carrots"><img src="upload/48544015562_9294520488_s.jpg" alt="roasted carrots" width="75" height="75" /></a>
+                            </li>
+                            <li>
+                                <a class="img_frame" target="_blank" href="upload/48528964047_de4b27d823_b.jpg" title="green mango and cucamelon salad"><img src="upload/48528964047_de4b27d823_s.jpg" alt="green mango and cucamelon salad" width="75" height="75" /></a>
+                            </li>
+                            <li>
+                                <a class="img_frame" target="_blank" href="upload/48489434421_4701e696dd_b.jpg" title="croissant morning"><img src="upload/48489434421_4701e696dd_s.jpg" alt="croissant morning" width="75" height="75" /></a>
+                            </li>
+                            <li>
+                                <a class="img_frame" target="_blank" href="upload/48317013731_f988b69c52_b.jpg" title="can&#039;t get enough of cherries"><img src="upload/48317013731_f988b69c52_s.jpg" alt="can&#039;t get enough of cherries" width="75" height="75" /></a>
+                            </li>
+                            <li>
+                                <a class="img_frame" target="_blank" href="upload/48308542466_151f2a66a3_b.jpg" title="cherry"><img src="upload/48308542466_151f2a66a3_s.jpg" alt="cherry" width="75" height="75" /></a>
+                            </li>
+                            <li>
+                                <a class="img_frame" target="_blank" href="upload/48092508442_dbd807762f_b.jpg" title="Romaine Wedge Caesar Salad"><img src="upload/48092508442_dbd807762f_s.jpg" alt="Romaine Wedge Caesar Salad" width="75" height="75" /></a>
+                            </li>
+                        </ul>
+                        <br class="clear" />
+                    <!-- painel para entrar em contato -->
+                    </li>
+                    <li id="text-10" class="widget widget_text">
+                        <h2 class="widgettitle">Nosso Contato</h2>
+                        <div class="textwidget">
+                            <p><i class="fa fa-map-marker marginright"></i><a href="loc:">Caruaru Shopping 800, Caruaru-PE</a></p>
+                            <p><i class="fa fa-phone marginright"></i><a href="tel:+55(81)99406-6582">+55(81)99406-6582</a></p>
+                            <p><i class="fa fa-envelope marginright"></i><a href="mailto:enricomodaantiga@outlook.com">enricomodaantiga@outlook.com</a></p>
+                            <p><i class="fa fa-globe marginright"></i><a href="link:">grandrestauranttheme.com</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <br class="clear" />
+        <!-- roda-pé de copyright -->
+            <div class="footer_bar_wrapper ">
+                <div id="copyright">© Restaurante G&G - </div>
+                <br class="clear" />
+                <a id="toTop"><i class="fa fa-angle-up"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="overlay_background"></div>
+
+
+    <script src='js/jquery.js'></script>
+    <script src='js/jquery-migrate.min.js'></script>
+    <script src='js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
+    <script src='js/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
+    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>  
+    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script> 
+    <script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
+    <script src='js/plugins/jquery.blockUI.min.js'></script>
+    <script src='js/plugins/js.cookie.min.js'></script>
+    <script src='js/plugins/jquery.magnific-popup.js'></script>
+    <script src='js/plugins/jquery.easing.js'></script>
+    <script src='js/plugins/waypoints.min.js'></script>
+    <script src='js/plugins/jquery.isotope.js'></script>
+    <script src='js/plugins/jquery.masory.js'></script>
+    <script src='js/plugins/jquery.tooltipster.min.js'></script>
+    <script src='js/plugins/hw-parallax.js'></script>
+    <script src='js/plugins/jquery.stellar.min.js'></script>
+    <script src='js/plugins/jquery.resizeimagetoparent.min.js'></script>
+    <script src='js/plugins/custom_plugins.js'></script>
+    <script src='js/plugins/custom.js'></script>
+    <script src='js/plugins/core.min.js'></script>
+    <script src='js/plugins/datepicker.min.js'></script>
+    <script src='js/plugins/custom-date.js'></script>
+    <script src='js/plugins/jquery.timepicker.js'></script>
+    <script src='js/plugins/custom-time.js'></script>
+    <script src='js/plugins/jquery.flexslider-min.js'></script>
+    <script src='js/plugins/jquery.validate.js'></script>
+    <script src='js/plugins/custom_onepage.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCmVhK5ZjYRjzAe-e9ZKS1mA3NBPuViwQ"></script>
+    <script src='js/plugins/jquery.simplegmaps.min.js'></script>
+    <script src='js/plugins/script-map.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var tgAjax = {
+            "ajaxurl": "#",
+            "ajax_nonce": "c5281db0c2"
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript'>
+        jQuery(window).load(function(){ 
+            jQuery('.slider_wrapper').flexslider({
+                  animation: "fade",
+                  animationLoop: true,
+                  itemMargin: 0,
+                  minItems: 1,
+                  maxItems: 1,
+                  slideshow: false,
+                  controlNav: false,
+                  smoothHeight: false,
+                  slideshowSpeed: 5000,
+                  move: 1
+            });
+            
+            jQuery('.slider_wrapper.portfolio .slides li').each( function() {
+                var height = jQuery(this).height();
+                var imageHeight = jQuery(this).find('img').height();
+            
+                var offset = (height - imageHeight) / 2;
+            
+                jQuery(this).find('img').css('margin-top', offset + 'px');
+            
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            try {
+                var i = jQuery(window).width(),
+                    t = 9999,
+                    r = 0,
+                    n = 0,
+                    l = 0,
+                    f = 0,
+                    s = 0,
+                    h = 0;
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function(e, f) {
+                        f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+                    }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+                    var u = (e.c.width(), jQuery(window).height());
+                    if (void 0 != e.fullScreenOffsetContainer) {
+                        var c = e.fullScreenOffsetContainer.split(",");
+                        if (c) jQuery.each(c, function(e, i) {
+                            u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                        }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+                    }
+                    f = u
+                } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+                e.c.closest(".rev_slider_wrapper").css({
+                    height: f
+                })
+            } catch (d) {
+                console.log("Failure at Presize of Slider:" + d)
+            }
+        };
+    </script>
+    <script>
+        var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
+        var htmlDivCss = ".tp-caption.title,.title{font-size:65px;font-weight:300;font-family:Lato;color:rgb(255,255,255);text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none;text-transform:uppercase;letter-spacing:-3px}.tp-caption.title-first-word,.title-first-word{font-size:60px;line-height:50px;font-family:Kristi;color:#cfa670;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none}.tp-caption.sub-title,.sub-title{font-size:20px;line-height:24px;font-weight:400;font-family:Lato;color:rgb(255,255,255);text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(0,0,0);border-style:none;text-shadow:none;text-transform:uppercase;letter-spacing:-1px}";
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement("div");
+            htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+            document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+    <script type="text/javascript">
+        setREVStartSize({
+            c: jQuery('#rev_slider_2_1'),
+            gridwidth: [1425],
+            gridheight: [650],
+            sliderLayout: 'fullscreen',
+            fullScreenAutoWidth: 'off',
+            fullScreenAlignForce: 'off',
+            fullScreenOffsetContainer: '',
+            fullScreenOffset: ''
+        });
+
+        var revapi2,
+            tpj = jQuery;
+        tpj.noConflict();
+        tpj(document).ready(function() {
+            if (tpj("#rev_slider_2_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_2_1");
+            } else {
+                revapi2 = tpj("#rev_slider_2_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "js/plugins/revslider/public/assets/js/",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 7000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            touchOnDesktop: "off",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 1,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        }
+                    },
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: 1425,
+                    gridheight: 650,
+                    lazyType: "none",
+                    shadow: 0,
+                    spinner: "spinner3",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    fullScreenAutoWidth: "off",
+                    fullScreenAlignForce: "off",
+                    fullScreenOffsetContainer: "",
+                    fullScreenOffset: "",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+
+        }); /*ready*/
+    </script>
+    <script>
+        var htmlDivCss = '  #rev_slider_2_1_wrapper .tp-loader.spinner3 div { background-color: #444444 !important; } ';
+        var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+        if (htmlDiv) {
+            htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+        } else {
+            var htmlDiv = document.createElement('div');
+            htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+            document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+        }
+    </script>
+</body>
+</html>
